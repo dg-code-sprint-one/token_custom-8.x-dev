@@ -1,0 +1,64 @@
+token_custom.menus:
+  path: '/admin/structure/token-custom'
+  defaults:
+    _title: 'Custom tokens'
+    _controller: '\Drupal\token_custom\Controller\CustomtokenController::token_custom_list_page'
+  requirements:
+    _permission: 'access content'
+token_custom_add.menus:
+  path: 'admin/structure/token-custom/add'
+  defaults:
+    _title: 'Add token'
+    _form: '\Drupal\token_custom\Form\Customtokenadd'
+  requirements:
+    _permission: 'access content'
+token_custom_type.menus:
+  path: 'admin/structure/token-custom/type'
+  defaults:
+    _title: 'Custom token types'
+    _controller: '\Drupal\token_custom\Controller\CustomtokenController::token_custom_type_list_page'
+  requirements:
+    _permission: 'access content'
+token_custom_type_add.menus:
+  path: 'admin/structure/token-custom/type/add'
+  defaults:
+    _title: 'Add token type'
+    _form: '\Drupal\token_custom\Form\Customtokenaddtype'
+  requirements:
+    _permission: 'access content'
+token_custom_edit.menus:
+  path: 'admin/structure/token-custom/{token_custom}/edit'
+  defaults:
+    _title: 'Edit custom tokens'
+    _form: '\Drupal\token_custom\Form\Customtokenadd'
+  requirements:
+    _permission: 'access content'
+token_custom_type_edit.menus:
+  path: 'admin/structure/token-custom-type/{token_custom_type}/edit'
+  defaults:
+    _title: 'Edit custom token types'
+    _form: '\Drupal\token_custom\Form\Customtokenaddtype'
+  requirements:
+    _permission: 'access content'    
+token_custom_delete.menus:
+  path: 'admin/structure/token-custom/{token_custom}/delete'
+  defaults:
+    _title: 'Delete custom tokens'
+    _form: '\Drupal\token_custom\Form\Customtokendelete'
+  requirements:
+    _permission: 'access content'  
+token_custom_type_delete.menus:
+  path: 'admin/structure/token-custom-type/{token_custom_type}/delete'
+  defaults:
+    _title: 'Delete custom token types'
+    _form: '\Drupal\token_custom\Form\Customtokentypedelete'
+  requirements:
+    _permission: 'access content'  
+
+
+
+
+
+
+
+

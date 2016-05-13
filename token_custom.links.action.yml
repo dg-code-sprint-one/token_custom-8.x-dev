@@ -1,0 +1,10 @@
+token_custom_add.menus:
+  route_name: token_custom_add.menus
+  title: 'Add Token'
+  appears_on:
+    - token_custom.menus
+token_custom_type_add.menus:
+  route_name: token_custom_type_add.menus
+  title: 'Add Token Type'
+  appears_on:
+    - token_custom_type.menus
